@@ -72,7 +72,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Matcher isdigit = letter.matcher(Passwd);
                 Matcher isspecial_char = letter.matcher(Passwd);
                 if(isletter.find()&&isdigit.find()&&isspecial_char.find()){
-                    Intent validation_screen = new Intent(LoginActivity.this, SplashScreenActivity.class);
+                    Intent validation_screen = new Intent(LoginActivity.this, validation_accepted.class);
                     startActivity(validation_screen);
                 }
             }else{
