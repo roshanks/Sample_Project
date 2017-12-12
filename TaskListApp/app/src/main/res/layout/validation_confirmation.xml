@@ -10,26 +10,51 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/iv_validuser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="229dp"
-            app:srcCompat="@drawable/validation" />
-
         <TextView
             android:id="@+id/tv_validuser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="145dp"
-            android:text="Welcome!!!, Your credentials are validated"
+            android:layout_alignBottom="@+id/iv_validuser"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="23dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginRight="33dp"
+            android:text="CURRENT TASK LISTS"
+            android:textColor="@color/colorGreen"
             android:textSize="@dimen/login_validated"
-            android:textColor="@color/colorEmerald"/>
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_validuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_toLeftOf="@+id/tv_validuser"
+            android:layout_toStartOf="@+id/tv_validuser"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/validation" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_addtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv_validuser"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/tv_validuser"
+            android:layout_marginBottom="40dp"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <ListView
+            android:id="@+id/lv_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp" />
 
     </RelativeLayout>
 </LinearLayout>

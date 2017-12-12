@@ -17,8 +17,8 @@
         </activity>
 
         <activity android:name=".activities.LoginActivity"/>
-
         <activity android:name=".activities.validation_accepted"/>
+        <activity android:name=".activities.AddTask"/>
 
 
     </application>

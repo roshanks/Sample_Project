@@ -81,20 +81,5 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }else{
             Toast.makeText(this, "Blankspaces are not allowed in Usernames", Toast.LENGTH_SHORT).show();
         }
-
-
-
     }
-
-
-
-//    public void validation(View v){
-//        Toast.makeText(this, "Entered", Toast.LENGTH_SHORT).show();
-//        if(loginid.getText()!= null){
-//
-//            Intent validation_screen = new Intent(LoginActivity.this,validation_accepted.class);
-//            startActivity(validation_screen);
-//        }
-//
-//    }
 }

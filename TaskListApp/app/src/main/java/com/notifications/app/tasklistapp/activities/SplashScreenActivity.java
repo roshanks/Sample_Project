@@ -27,6 +27,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 //TODO start next screen
                 Intent redirectToNextScreen=new Intent(SplashScreenActivity.this,LoginActivity.class);
                 startActivity(redirectToNextScreen);
+                finish();
             }
         }, AppContants.SPLASH_SCREEN_TIME);
     }
