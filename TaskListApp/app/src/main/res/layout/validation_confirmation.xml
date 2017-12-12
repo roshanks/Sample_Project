@@ -53,8 +53,30 @@
             android:id="@+id/lv_tasks"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageButton" />
+
+        <EditText
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lv_tasks"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iv_validuser"
+            android:layout_toLeftOf="@+id/imageButton"
+            android:layout_toStartOf="@+id/imageButton"
+            android:hint="Search" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv_validuser"
+            android:layout_alignRight="@+id/tv_validuser"
             android:layout_below="@+id/tv_validuser"
-            android:layout_centerHorizontal="true" />
+            app:srcCompat="@android:drawable/ic_search_category_default" />
 
     </RelativeLayout>
 </LinearLayout>

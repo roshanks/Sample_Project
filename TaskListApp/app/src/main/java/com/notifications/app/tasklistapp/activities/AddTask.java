@@ -70,6 +70,7 @@ public class AddTask extends AppCompatActivity implements View.OnClickListener {
                 // Setting the Task Model
                 Intent showTasks = new Intent(AddTask.this, validation_accepted.class);
                 startActivity(showTasks);
+                finish();
 
         }
 

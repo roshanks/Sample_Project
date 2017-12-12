@@ -81,6 +81,6 @@ public class validation_accepted extends AppCompatActivity implements View.OnCli
 
         Intent float_action_task = new Intent(validation_accepted.this,AddTask.class);
         startActivity(float_action_task);
-
+        finish();
     }
 }
