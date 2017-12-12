@@ -10,15 +10,16 @@
         android:theme="@style/AppTheme" >
 
         <activity android:name=".activities.SplashScreenActivity">
+        </activity>
+
+        <activity android:name=".activities.LoginActivity"/>
+        <activity android:name=".activities.validation_accepted">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER"/>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
-
-        <activity android:name=".activities.LoginActivity"/>
-        <activity android:name=".activities.validation_accepted"/>
-        <activity android:name=".activities.AddTask"/>
+        <activity android:name=".activities.AddTask"></activity>
 
 
     </application>

@@ -27,7 +27,7 @@ public class DBHandler {
     private String Create_Task = "create table "+ TN_Task+"("+ TN_TaskID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
             +CN_Task_name+" varchar(200),"+ CN_Task_description+" varchar(200))";
 
-    private String Get_All_Task = "Select * from"+ TN_Task;
+    private String Get_All_Task = "Select * from "+ TN_Task;
 
 
     public DBHandler(Context context){
@@ -66,7 +66,6 @@ public class DBHandler {
         @Override
         public void onCreate(SQLiteDatabase sqLiteDatabase) {
             sqLiteDatabase.execSQL(Create_Task);
-
         }
 
         @Override
